@@ -24,7 +24,7 @@ body:
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: rfp-document
     attributes:
       label: "RFP Document"
