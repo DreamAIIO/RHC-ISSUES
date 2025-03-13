@@ -1,0 +1,34 @@
+name: Feedback
+description: Provide feedback related to an RFP process
+title: "[Feedback]: "
+labels: [feedback]
+
+body:
+  - type: input
+    id: rfp-name
+    attributes:
+      label: "RFP Name"
+      description: "Enter the name of the RFP you are providing feedback for."
+      placeholder: "e.g., RFP-1234: Cloud Services"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: "Stage"
+      description: "Select the stage this feedback relates to."
+      options:
+        - Criteria
+        - Evaluation
+    validations:
+      required: true
+
+  - type: textarea
+    id: feedback
+    attributes:
+      label: "Feedback"
+      description: "Provide your detailed feedback."
+      placeholder: "Describe your feedback in detail..."
+    validations:
+      required: true
