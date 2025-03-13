@@ -29,7 +29,6 @@ body:
     attributes:
       label: "RFP Document"
       description: "Upload the RFP document you're providing feedback for."
-      placeholder: "Drag and drop the RFP file here or click to upload"
     validations:
       required: true
 
