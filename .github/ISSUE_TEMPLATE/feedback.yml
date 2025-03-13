@@ -24,13 +24,12 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: rfp-document
+  - type: markdown
     attributes:
-      label: "RFP Document"
-      description: "Upload the RFP document you're providing feedback for."
-    validations:
-      required: true
+      value: |
+        **📎 Upload the RFP Document**
+        - Please attach the relevant RFP document below using the GitHub issue attachment feature.
+        - Drag and drop the file or click the attachment icon when submitting this issue.
 
   - type: textarea
     id: feedback
