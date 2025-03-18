@@ -1,0 +1,69 @@
+name: Bug Report
+description: Report a bug related to an RFP process
+title: "[Bug]: "
+labels: [bug]
+
+body:
+  - type: input
+    id: rfp-name
+    attributes:
+      label: "RFP Name"
+      description: "Enter the name of the RFP related to this bug."
+      placeholder: "e.g., RFP-1234: Cloud Services"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: stage
+    attributes:
+      label: "Stage"
+      description: "Select the stage this bug relates to."
+      options:
+        - Criteria
+        - Evaluation
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        **📎 Upload the RFP Document**
+        - Please attach the relevant RFP document below using the GitHub issue attachment feature.
+        - Drag and drop the file or click the attachment icon when submitting this issue.
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: "Bug Description"
+      description: "Describe the bug and how it affects the RFP process."
+      placeholder: "Clearly explain the issue..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Provide the steps to reproduce the bug."
+      placeholder: |
+        1. Go to...
+        2. Click on...
+        3. Observe the issue...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "Expected Behavior"
+      description: "Describe what should have happened instead."
+      placeholder: "The expected outcome is..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Additional Information"
+      description: "Any additional context, logs, screenshots, or details."
+      placeholder: "Provide any extra information..."
