@@ -1,0 +1,33 @@
+name: Feature Request
+description: Suggest a new feature or improvement
+title: "[Feature Request]: "
+labels: [feature]
+
+body:
+  - type: input
+    id: feature-title
+    attributes:
+      label: "Feature Title"
+      description: "Give a short title for your feature request."
+      placeholder: "e.g., Add support for AI-based evaluation"
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "Feature Description"
+      description: "Describe the feature and why it is needed."
+      placeholder: "Provide details on how this feature would be useful..."
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: "Use Case"
+      description: "Explain how this feature would be used in real scenarios."
+      placeholder: "Describe the intended use case..."
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: "Additional Information"
+      description: "Any other relevant details or context."
+      placeholder: "Provide any extra information..."
