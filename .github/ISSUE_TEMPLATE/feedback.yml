@@ -17,9 +17,8 @@ body:
     id: stage
     attributes:
       label: "Stage"
-      description: "Criteria or Evaluation"
+      description: "Select the stage this feedback relates to."
       options:
-        - "Select a stage..."
         - Criteria
         - Evaluation
     validations:
